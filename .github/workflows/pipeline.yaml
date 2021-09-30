@@ -47,5 +47,5 @@ jobs:
         with:
           context: ./Chapter15
           push: true
-          tags: ${{ env.ACRNAME }}.azure.io/web-site/website:${{ github.run_number }}
+          tags: ${{ env.ACRNAME }}.azure.io/website/website:${{ github.run_number }}
 
