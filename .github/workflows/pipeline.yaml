@@ -65,7 +65,7 @@ jobs:
           cluster-name: handsonaks
           
       - name: Helm upgrade
-        run: helm upgrade website Chapter15/website --install --set image.repository=$ACRNAME.azurecr.io/website/website --set image.tag=${{gitbub.run_number}}
+        run: helm upgrade website Chapter15/website --install --set image.repository=$ACRNAME.azurecr.io/website/website --set image.tag=${{github.run_number}}
         
       
     
